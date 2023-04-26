@@ -9,7 +9,7 @@ function Home() {
 
   useEffect(() => {
     fetch(
-      `https://yts.mx/api/v2/list_movies.json?minimum_rating=3&sort_by=year`
+      `https://yts.mx/api/v2/list_movies.json?minimum_rating=7&sort_by=year`
     )
       .then((response) => response.json())
       .then((json) => {
