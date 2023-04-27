@@ -34,6 +34,7 @@ function Detail() {
             coverImg={movieInfo.background_image}
             title={movieInfo.title}
             description={movieInfo.description_full}
+            date={movieInfo.date_uploaded}
           />
         </div>
       )}

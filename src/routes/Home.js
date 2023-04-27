@@ -9,7 +9,7 @@ function Home() {
 
   useEffect(() => {
     fetch(
-      `https://yts.mx/api/v2/list_movies.json?minimum_rating=7&sort_by=year`
+      `https://yts.mx/api/v2/list_movies.json?minimum_rating=6&sort_by=year`
     )
       .then((response) => response.json())
       .then((json) => {
@@ -45,11 +45,11 @@ function Home() {
 }
 
 const Container = styled.div`
-  padding: 30px 50px;
+  padding: 100px 100px;
   background-color: whitesmoke;
   color: #141414;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 80px;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 `;
 

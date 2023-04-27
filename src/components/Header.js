@@ -10,11 +10,13 @@ function Header() {
 }
 
 const Nav = styled.div`
+  width: 100vw;
   height: 60px;
   border: 1px solid black;
   background-color: #141414;
   display: flex;
   align-items: center;
+  position: fixed;
   a {
     text-decoration: none;
   }

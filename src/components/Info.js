@@ -1,12 +1,15 @@
 import propTypes from "prop-types";
 import styled from 'styled-components';
 
-function Info({ coverImg, title, description }) {
+function Info({ coverImg, title, date, description }) {
   return (
     <Container>
       <img src={coverImg} alt={title} />
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <Content>
+        <h1>{title}</h1>
+        <span>{date}</span>
+        <p>{description}</p>
+      </Content>
     </Container>
   );
 }
@@ -18,23 +21,31 @@ Info.propTypes = {
 };
 
 const Container = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: whitesmoke;
-  h1 {
-    color: #141414;
-  }
-  p {
-    padding:10px;
-    color: #141414;
-    text-align: center;
-    white-space: pre-line;
-  }
+  background-color: #141414;
   img {
     width: 100vw;
+    height: 100vh;
   }
 `;
-
+const Content = styled.div`
+  padding: 50px;
+  color: whitesmoke;
+  position: absolute;
+  top: 50px;
+  h1 {
+    font-size: 60px;
+    margin: 10px 10px 0px 10px;
+  }
+  span {
+    font-size: 18px;
+    margin: 5px 10px 10px 10px;
+    font-weight: bold;
+  }
+  p {
+    margin: 10px;
+    font-size: 30px;
+  }
+`
 export default Info;
