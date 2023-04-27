@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Header() {
   return (
     <Nav>
-      <Link to="/"><span>Movies</span></Link>
+      <Link to={`${process.env.PUBLIC_URL}/`}><span>Movies</span></Link>
     </Nav>
   )
 }
