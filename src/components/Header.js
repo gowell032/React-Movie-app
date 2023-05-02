@@ -12,7 +12,7 @@ function Header() {
 const Nav = styled.div`
   width: 100vw;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid #141414;
   background-color: #141414;
   display: flex;
   align-items: center;

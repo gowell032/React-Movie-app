@@ -26,14 +26,12 @@ const Container = styled.div`
   background-color: #141414;
   img {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
   }
 `;
 const Content = styled.div`
   padding: 50px;
   color: whitesmoke;
-  position: absolute;
-  top: 50px;
   h1 {
     font-size: 60px;
     margin: 10px 10px 0px 10px;
